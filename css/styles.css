@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+/* Estilos del menú */
+nav {
+    width: 250px;
+    background: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos de la sección activa */
+.seccion {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    min-height: 100vh; /* Ajustar para que no corte el contenido */
+    padding: 20px; /* Espacio adicional */
+}
+
+
+.active {
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    background: #d3d3d3;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+ /* Contenedor de habilidades en dos columnas */
+.habilidades-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 600px;
+    gap: 20px; /* Agrega espacio entre las columnas */
+}
+
+.habilidades-box {
+    background: #d3d3d3;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%; /* Cada caja ocupa casi la mitad */
+    text-align: left;
+    font-size: 18px;
+}
+
+/* Iconos en las habilidades */
+.habilidades-box i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .habilidades-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Menos espacio en dispositivos móviles */
+    }
+
+    .habilidades-box {
+        width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    }
+}
+
+/* Contenedor principal */
+#educacion {
+    background: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    
+}
+
+
+/* Título */
+.titulo-seccion {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 20px; /* Agregar margen arriba */
+    display: block;
+    align-items: center;
+}
+
+
+/* Contenedor de tarjetas */
+.educacion-container {
+    display: flex;
+    justify-content: center;
+   
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tarjetas */
+.educacion-box {
+    background: #d3d3d3;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* En móviles */
+@media (max-width: 768px) {
+    #educacion {
+        padding-top: 25%;
+    }
+    .educacion-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .educacion-box {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+.proyectos-box{
+    background: #d3d3d3;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Cada caja ocupa casi la mitad */
+    text-align: center;
+    font-size: 18px;
+}
